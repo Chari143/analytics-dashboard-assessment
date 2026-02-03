@@ -21,7 +21,9 @@ import RangeDistributionChart from './components/RangeDistributionChart';
 import CAFVChart from './components/CAFVChart';
 import TopModelsChart from './components/TopModelsChart';
 
-const CSV_PATH = '/data-to-visualize/Electric_Vehicle_Population_Data.csv';
+import csvPath from './assets/data/Electric_Vehicle_Population_Data.csv?url';
+
+const CSV_PATH = csvPath;
 
 interface ChartData {
     evType: ChartDataItem[];
