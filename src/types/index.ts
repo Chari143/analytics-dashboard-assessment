@@ -1,4 +1,3 @@
-// Type definitions for EV Analytics Dashboard
 
 export interface EVRecord {
     'VIN (1-10)': string;

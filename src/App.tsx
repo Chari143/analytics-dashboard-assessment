@@ -103,9 +103,6 @@ function App() {
                             EV Analytics Dashboard
                         </h1>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-500">
-                        <span>{metrics?.totalEVs.toLocaleString()} vehicles analyzed</span>
-                    </div>
                 </div>
             </header>
 
