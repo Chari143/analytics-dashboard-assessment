@@ -2,7 +2,7 @@
 
 A simple dashboard I built to visualize electric vehicle data from Washington State. Uses React, TypeScript, and Tailwind CSS.
 
-**[Live Demo →](https://analytics-dashboard-assessment-lime.vercel.app)**
+**[Live Demo →](https://analytics-dashboard-assessment-fawn-five.vercel.app/)**
 
 ---
 
