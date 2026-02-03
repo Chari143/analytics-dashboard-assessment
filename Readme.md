@@ -1,77 +1,64 @@
 # EV Analytics Dashboard
 
-A modern, responsive analytics dashboard for visualizing Electric Vehicle (EV) population data. Built with React, TypeScript, and Tailwind CSS.
+A simple dashboard I built to visualize electric vehicle data from Washington State. Uses React, TypeScript, and Tailwind CSS.
 
-**[🚀 Live Demo](YOUR_DEPLOYMENT_URL_HERE)**
-
-*(Please replace `YOUR_DEPLOYMENT_URL_HERE` with the actual URL after deployment)*
+**[Live Demo →](https://analytics-dashboard-assessment-lime.vercel.app)**
 
 ---
 
-## 📊 Overview
+## What it does
 
-This dashboard provides key insights into the EV ecosystem in Washington State, processing over 50,000 vehicle records to visualize:
-- **Adoption Trends:** Year-over-year EV registration growth.
-- **Market Dominance:** Top manufacturers and most popular models.
-- **Geographic Data:** Distribution of EVs across counties.
-- **Technology Stats:** BEV vs. PHEV split and electric range analysis.
-- **Incentives:** Clean Alternative Fuel Vehicle (CAFV) eligibility.
+Loads around 50k vehicle records and shows:
+- How EV adoption has grown over the years
+- Which manufacturers dominate the market (spoiler: Tesla)
+- Where EVs are most popular in the state
+- Battery vs plug-in hybrid split
+- Electric range distribution
+- Incentive eligibility stats
 
-## 🛠 Tech Stack
+## Tech I used
 
-- **Framework:** React 18 + Vite
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS (Light Theme)
-- **Visualization:** Recharts
-- **Data Parsing:** PapaParse
+- React 18 with Vite for fast dev
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Recharts for the charts
+- PapaParse for CSV parsing
 
-## ✨ Features
+## Running locally
 
-- **Performance:** Fast parsing of client-side CSV data (~50k records).
-- **Design:** Clean, modern light theme with responsive grid layout.
-- **Interactivity:** Interactive charts with tooltips and hover effects.
-- **Type Safety:** Full TypeScript implementation for robust code.
+```bash
+# clone it
+git clone https://github.com/Chari143/analytics-dashboard-assessment.git
+cd analytics-dashboard-assessment
 
-## 🚀 How to Run Locally
+# install deps
+npm install
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Chari143/analytics-dashboard-assessment.git
-   cd analytics-dashboard-assessment
-   ```
+# start dev server
+npm run dev
+```
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+Then open http://localhost:5173
 
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-   Open http://localhost:5173 to view the dashboard.
+## Building for prod
 
-4. **Build for production:**
-   ```bash
-   npm run build
-   ```
+```bash
+npm run build
+```
 
-## 📂 Project Structure
+Output goes to the `dist` folder.
+
+## Project layout
 
 ```
 src/
-├── types/              # TypeScript interface definitions
-├── utils/              # Data parsing and processing logic
-├── components/         # Reusable UI cards and Chart components
-├── App.tsx             # Main dashboard layout
-├── main.tsx            # Entry point
-└── index.css           # Tailwind directives
+├── types/         # TS interfaces
+├── utils/         # data processing
+├── components/    # chart components
+├── App.tsx        # main layout
+└── index.css      # tailwind
 ```
 
 ---
 
-## 📝 Assessment Submission
-
-- **Repository:** Private GitHub Repository
-- **Dataset:** [Electric Vehicle Population Data](./data-to-visualize/Electric_Vehicle_Population_Data.csv)
-- **Collaborators:** Added as requested.
+Built for the MapUp Analytics Dashboard Assessment.
